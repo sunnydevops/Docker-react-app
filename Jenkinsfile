@@ -5,11 +5,8 @@ pipeline{
             args '-p 3000:3000'
         }
     }
-    stages{
-        stage('Build'{
-            step{
-                sh 'npm install'
+        stage('Build'){
+            sh 'npm install'
             }
-        })
+        
     }
-}
